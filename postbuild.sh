@@ -5,7 +5,7 @@ mkdir $folder -p
 
 version=$(cat gradle.properties | grep mod_version | cut -d "=" -f 2 | xargs)
 version="${version%%[[:cntrl:]]}"
-targets=("forge" "fabric")
+targets=("forge" "fabric" "common")
 for target in "${targets[@]}"; do
   cp "$target/build/libs/worldguard-$version.jar" "$folder/worldguard-$version-$target.jar"
   cp "$target/build/libs/worldguard-$version.jar" "$folder/worldguard-$version-$target-client.jar"
