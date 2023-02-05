@@ -4,6 +4,13 @@
   "package": "com.github.zly2006.worldguard.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "server": [
     "MixinAbstractDecorationEntity",
     "MixinAbstractMinecartEntity",
     "MixinAnimalEntity",
@@ -16,8 +23,12 @@
     "MixinChestBoatEntity",
     "MixinChorusFruitItem",
     "MixinEndCrystalEntity",
+    "MixinEnderDragonEntity",
     "MixinExplosion",
+    "MixinFallingBlockEntity",
     "MixinFarmlandBlock",
+    "MixinFireBlock",
+    "MixinFlowableFluid",
     "MixinHopperBlockEntity",
     "MixinItemEntity",
     "MixinItemFrameEntity",
@@ -30,12 +41,15 @@
     "MixinMinecartEntity",
     "MixinMobEntity",
     "MixinParrotEntity",
+    "MixinPistonBlock",
     "MixinPlayerEntity",
     "MixinPotionEntity",
     "MixinPowderSnowBlock",
     "MixinSculkCatalystBlock",
     "MixinSculkCatalystBlockEntity",
+    "MixinSculkSpreadManagerCursor",
     "MixinSculkVeinBlock",
+    "MixinServerPlayerEntity",
     "MixinServerPlayerInteractionManager",
     "MixinStepAndDestroyBlockGoal",
     "MixinStorageMinecartEntity",
@@ -46,19 +60,5 @@
     "MixinWitherSkullBlock",
     "PersistentStateManagerAccessor",
     "ServerChunkManagerAccessor"
-  ],
-  "client": [
-  ],
-  "injectors": {
-    "defaultRequire": 1
-  },
-  "server": [
-    "MixinEnderDragonEntity",
-    "MixinFallingBlockEntity",
-    "MixinFireBlock",
-    "MixinFlowableFluid",
-    "MixinPistonBlock",
-    "MixinSculkSpreadManagerCursor",
-    "MixinServerPlayerEntity"
   ]
 }
